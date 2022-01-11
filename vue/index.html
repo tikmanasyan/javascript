@@ -16,6 +16,18 @@
     </div>
 
     <div id="app2" v-if="show">sdsdsd</div>
+
+    <div id="app3">
+        <ul >
+            <li v-for="notebook in notebooks">{{notebook.name}}</li>
+        </ul>
+    </div>
+
+    <div id="app4">
+        <p>{{ msg }}</p>
+        <button v-on:click="revMsg">Click for reverse</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./js/main.js"></script>
 </body>

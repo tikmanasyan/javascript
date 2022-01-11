@@ -19,3 +19,27 @@ const app2 = new Vue({
         show:true
     }
 });
+
+
+const app3 = new Vue({
+    el:"#app3",
+    data:{
+        notebooks:[
+            {name:'Asus'},
+            {name:'Apple'},
+            {name:'Lenovo'}
+        ]
+    }
+});
+
+const app4 = new Vue({
+    el:"#app4",
+    data:{
+        msg:'Hello'
+    },
+    methods:{
+        revMsg:function() {
+            this.msg = this.msg.split('').reverse().join('')
+        }
+    }
+});
